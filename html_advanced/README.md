@@ -1,4 +1,4 @@
-![A README PHOTOOO]( C:\REMYBOY2\ALX\GIT Files\alx_html_css\html_advanced\piece-green-land-isolated-creative-travel-tourism-off-road-design-trees-unusual-illustration-d-244115255.jpg )
+![A README PHOTOOO]( html_advanced\piece-green-land-isolated-creative-travel-tourism-off-road-design-trees-unusual-illustration-d-244115255.jpg )
 
 # Implementing from scratch a webpage from a designer file.
 
