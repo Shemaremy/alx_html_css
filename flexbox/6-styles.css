@@ -211,7 +211,7 @@ main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;hei
   
    
   
-  .nav .nav-item + .nav-item{
+  .nav {
 
     margin: var(0 0 0 2rem);
     display: flex;
