@@ -209,11 +209,14 @@ main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;hei
   /* Navbar
       ============================= */
   
-   
+      .nav-item + .nav-item{
+
+        margin: var(0 0 0 2rem);
+      }
   
   .nav {
 
-    margin: var(0 0 0 2rem);
+    
     display: flex;
     margin: 0;
     padding: 0;
