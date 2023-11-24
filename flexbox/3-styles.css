@@ -382,7 +382,7 @@
   }
 
   /* Section SERVICES ============================= */
-  .section-latest-news .row{
+  ul.row{
     flex-wrap: wrap;
   }
 
