@@ -1,0 +1,33 @@
+header{
+    width:1000px;
+    height: 200px;
+    background-image: url("file:///C:/REMYBOY2/ALX/GIT%20Files/alx_html_css/alx_html_css/headphones/images/headphones_hero_1.jpg");
+    padding: 200px;
+}
+
+div{
+     
+    flex-direction: row;    
+    width: 250px;
+     border-image-repeat: no-repeat;
+    
+}
+
+.one{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+}
+.two{
+    width: 80px;
+    height: 80px;
+    background-color: blueviolet;
+}
+.all{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+ 
