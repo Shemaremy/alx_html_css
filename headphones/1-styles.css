@@ -1,33 +1,92 @@
-header{
-    width:1000px;
-    height: 200px;
-    background-image: url("file:///C:/REMYBOY2/ALX/GIT%20Files/alx_html_css/alx_html_css/headphones/images/headphones_hero_1.jpg");
-    padding: 200px;
+:root
+{
+    --spacing-xl:150px;
+    --spacing-l:100px;
+    --spacing-m:50px;
+    --spacing-s:25px;
+    --spacing-xs:15px;
+    --spacing-xxs:5px;
+
+    --font-size-s: 15px;
+    --font-size-m: 30px;
+    --font-size-l: 45px;
+
+    --imagesize-xl: 150px; 
+
 }
 
-div{
-     
-    flex-direction: row;    
-    width: 250px;
-     border-image-repeat: no-repeat;
+header
+{
+    border: 1px solid black;
+    height: 100vh;
+    background-image: url(file:///C:/REMYBOY2/ALX/GIT%20Files/alx_html_css/headphones/images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     
 }
 
-.one{
-    width: 80px;
-    height: 80px;
-    background-color: black;
-}
-.two{
-    width: 80px;
-    height: 80px;
-    background-color: blueviolet;
-}
-.all{
+nav
+{
+
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    
 }
+
+.sub-nav
+{   color: white; 
+    font-size: 12px; 
+    font-family: Source Sans Pro; 
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    column-gap: var(--spacing-xs);
+    padding-right: var(--spacing-l);
+    padding-top: var(--spacing-s);
+}
+
+nav > img
+{
+   display: flex;
+   padding-left: var(--spacing-xl);
+   padding-top: var(--spacing-m);
+   width: var(--imagesize-xl);
+   height: 32px;
+}
+
+.hero-details    
+{
+    color: white;
+    padding-top: 280px;
+    padding-bottom: 148px;     
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{ padding-left: 29px;}
+
+.headingtexts > input
+{   font-size: 14px; 
+    font-weight: 600;
+    background-color: #FF6565;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #FF6565;
+    border-radius: 20px;
+}
+
+p{ text-align: center;}
+
+.paragraphs > p
+{
+    color: white;
+    align-items: center;
+    padding-top: var(--spacing-m);
+}
+
 
 
  
