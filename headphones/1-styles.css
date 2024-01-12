@@ -1,5 +1,6 @@
 :root
 {
+    --spacing-xxl:250px;
     --spacing-xl:150px;
     --spacing-l:100px;
     --spacing-m:50px;
@@ -15,9 +16,22 @@
 
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+ 
+
 header
 {
-    border: 1px solid black;
+ 
     height: 100vh;
     background-image: url(file:///C:/REMYBOY2/ALX/GIT%20Files/alx_html_css/headphones/images/headphones_hero_1.jpg);
     background-repeat: no-repeat;
@@ -94,8 +108,119 @@ p{ text-align: center;}
     color: white;
     align-items: center;
     padding-top: var(--spacing-m);
+    padding-bottom: var(--spacing-m);
+}
+
+/* Centering the logo on small screens */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.sub-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* A media query for small screens */
+@media screen and (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.what_we_do {
+   
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:white;
+
+    padding-top: var(--spacing-s);
+}
+
+.greeting-section {
+    padding-top: var(--spacing-xl);
+    text-align: center;
+    padding: var(--spacing-l);
+    color: black;
+}
+
+.big-hello {
+    font-size: var(--font-size-l);
+    margin-bottom: var(--spacing-m);
+}
+
+.img-lib {
+     padding-top: var(--spacing-l);
 }
 
 
+.Our-results{
+    background-image: url("file:///C:/REMYBOY2/ALX/GIT%20Files/alx_html_css/headphones/images/headphones_hero_2.jpg");    
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.inner-text{
+    text-align: center;
+    color: white;
+    font-size: var(--font-size-m);
+    padding-top: var(--spacing-l);
+}
 
- 
+.inner-paragraph{
+    text-align: center;
+    color: white;
+    font-size: var(--font-size-s);
+    padding-top: var(--spacing-s);
+
+
+}
+
+.dots {
+    padding-top: var(--spacing-m);
+    padding-left: 60px;
+    text-align: center;
+}
+
+.dot-image {
+    margin-right:var(--spacing-m); 
+}
+
+.contact-us{
+    text-align: center;
+    background-color: white;
+    padding-top: var(--spacing-xl);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.footer{
+    background-color: #071629;
+    height: 60vh;
+
+}
+.bottom-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: var(--spacing-l);
+
+}
+
+.Lastp{
+    color: rgb(124, 122, 117);
+    padding-top: var(--spacing-xl);
+}
