@@ -1,0 +1,110 @@
+:root
+{
+    --spacing-xxl:250px;
+    --spacing-xl:150px;
+    --spacing-l:100px;
+    --spacing-m:50px;
+    --spacing-s:25px;
+    --spacing-xs:15px;
+    --spacing-xxs:5px;
+    
+
+    --font-size-s: 15px;
+    --font-size-m: 30px;
+    --font-size-l: 45px;
+    --font-size-xl: 60px;
+    --font-size-xxl: 85px;
+
+    --imagesize-xl: 150px; 
+
+}
+
+
+header
+{
+    border-color: black;
+    border-style: dotted;
+    height: 180vh;
+    width: 199vh;
+    background-image: url(file:///C:/Users/User/Downloads/CSS%20Advanced/Object.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+    
+}
+.smilinglogo{
+    font-size: large;
+    padding-left: var(--spacing-xl);
+    padding-top: var(--font-size-m);
+}
+.sub-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: var(--spacing-l);
+    color: white;
+   
+}
+.a{padding-right: var(--spacing-s);}
+.b{padding-right: var(--spacing-s);}
+.c{padding-right: var(--spacing-s);}
+
+.header-container{
+    padding-top: var(--spacing-xxs);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    padding-top: var(--spacing-m);
+
+}
+p{
+    padding-top: 0px;
+}
+.smallhs{
+     
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: var(--spacing-s);
+    
+}
+
+.d{
+    padding-left: var(--font-size-l);
+    padding-right: var(--font-size-xl);
+
+}
+.button{
+    padding-top: var(--spacing-m);
+    text-align: center;}
+.button > input{ 
+    text-align: center;
+    font-size: 14px; 
+    font-weight: 600;
+    background-color:rgb(164, 68, 253);
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: 1px solid rgb(164, 84, 240);
+    border-radius: 20px;
+}
+
+
+.headingtwo{
+    text-align: center;
+    padding-top: var(--spacing-l);
+    font-size: var(--font-size-m);
+}
+
+.people{
+    text-align: center;
+    padding-left: var(--spacing-m);
+}
