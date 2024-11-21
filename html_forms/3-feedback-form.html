@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <form action="" id="feedback-form">
+        <div>
+            <label for="user-name"> Name </label>
+            <input type="text" name="user-name" required>
+        </div>
+        <div>
+            <label for="user-email"> email </label>
+            <input type="email" name="user-email" required>
+        </div>
+        <div>
+            <label for="feedback-options">Feedback Options:</label>
+            <br>
+            <!--excellent, good, average, poor)-->
+            <input type="checkbox" name="feedback1" value="excellent">
+            <label for="excellent">Excellent</label>
+            <input type="checkbox" name="feedback2" value="good">
+            <label for="good">Good</label>
+            <input type="checkbox" name="feedback3" value="average">
+            <label for="average">Average</label>
+            <input type="checkbox" name="feedback4" value="poor">
+            <label for="poor">Poor</label>
+            
+        </div>
+
+        <div>
+            <label for="upload-file">Upload File: </label>
+            <input type="file" name="upload-file" id="upload-file">
+        </div>
+        
+        <div>
+            <input type="button" name="submit" value="Submit Feedback">
+        </div>
+        <h2 id="validation-msg"></h2>
+    </form>
+
+    <script>
+        const feedbackForm = document.getElementById('feedback-form');
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]'); 
+        const validationMSg = document.getElementById('validation-msg');
+        //check if at least one checkbox is checked
+        function atLeastOneCheckboxChecked(checkboxes){
+            return Array.from(checkboxes).some(
+                checkbox => checkbox.checked
+            );
+        }
+        // Event listner to validate checlboxes
+        feedbackForm.addEventListener('submit', function (){
+            if (!atLeastOneCheckboxChecked){
+                validationMSg.innerHTML = 'At least one checkbox must be checked';
+                return;
+            }else{
+                validationMSg.innerHTML = 'Form submitted successfully';
+            }
+        })
+        
+    </script>
+    
+</body>
+</html>
